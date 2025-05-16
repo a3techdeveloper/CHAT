@@ -80,8 +80,8 @@ const handleLogin = (event) => {
 
     login.style.display = "none"
     chat.style.display = "flex"
-
-    websocket = new WebSocket("wss://chat-lje3.onrender.com")
+ 
+    websocket = new WebSocket("ws://chat-lje3.onrender.com")
     websocket.onmessage = processMessage
 }
 
